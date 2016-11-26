@@ -3,6 +3,10 @@ import Header from './common/Header';
 
 
 class App extends React.Component {
+  static propTypes = {
+    children: PropTypes.object.isRequired
+  }
+  
   render () {
     return (
       <div className="container-fluid">
@@ -13,8 +17,5 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = {
-  children: PropTypes.object.isRequired
-};
 
 export default App;
